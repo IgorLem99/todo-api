@@ -1,9 +1,8 @@
 package main
 
-import (
-	"github.com/IgorLem99/todo-api/internal/db"
-	"github.com/IgorLem99/todo-api/internal/router"
-)
+import "github.com/IgorLem99/todo-api/internal/db"
+import "github.com/IgorLem99/todo-api/internal/router"
+
 
 func main() {
 	db.Init()
