@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Registration Form -->
+        <div id="register-form" class="form-container">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Username">
+            <input type="password" id="register-password" placeholder="Password">
+            <button onclick="register()">Register</button>
+            <p id="register-message"></p>
+            <a href="#" onclick="showLoginForm()">Already have an account? Log in</a>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form" class="form-container" style="display: none;">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">Log in</button>
+            <p id="login-message"></p>
+            <a href="#" onclick="showRegisterForm()">Don't have an account? Register</a>
+        </div>
+
+        <!-- Word List Management -->
+        <div id="word-list" class="form-container" style="display: none;">
+            <h2>Your Words</h2>
+            <input type="text" id="word-input" placeholder="Enter a word">
+            <button onclick="addWord()">Add Word</button>
+            <ul id="word-list-container"></ul>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
